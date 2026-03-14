@@ -1,0 +1,23 @@
+-> Stratify helps us to split the data into train and test ensuring that the fraud data gets split on bases of proportion mentioned (if test_size = 0.2 then train will have 80% fraud,test will have 20%) 
+
+-> Precision Recall
+Precision means if the model says "fraud", how often is it correct?
+Recall means how many of the actual fraud transactions did we actually catch?
+
+-> Model Comparision
+Logistic Regression can be used as a model as we are clssifying the data as fraud or normal (most basic model)
+
+Random Forest can be used as a model as it uses 100s of decision trees to check for fraud or normal but each of those hundred trees uses a random subset of th data and hence each one is unique
+
+Gradient Boosting can be used as a model as it also uses decision trees but instead of each tree predicting on different set of data it focuses on the mistakes by the previous trees hence making the predictions better.
+
+-> RESULT OF COMPARISION
+   Model                 precision  recall     f1         auc
+1  Logistic Regression   0.057803   0.918367   0.108761   0.970843
+2  Random Forest         0.870968   0.826531   0.848168   0.968451
+3  Gradient Boosting     0.113350   0.918367   0.201794   0.980965
+
+Random Forest is best after comparing as f1 score is max for it.
+
+-> Joblib Importance
+We dump the model as that model is then trained so while actually predicting we load that same model instead of making a new model as that new model is not trained so the request will crash. 
