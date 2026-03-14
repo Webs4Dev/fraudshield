@@ -1,9 +1,3 @@
-Here is a **clean and professional README.md** you can use for your project. It is structured the way recruiters expect on GitHub (overview → features → architecture → setup → usage).
-
-You can paste this directly into your `README.md`.
-
----
-
 # 💳 FinTech Credit Card Fraud Detection
 
 An end-to-end **Machine Learning web application** that detects fraudulent credit card transactions in real time.
